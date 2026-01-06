@@ -80,6 +80,7 @@ nav {
     margin-bottom: 18px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
 }
 
 nav ul {
@@ -129,21 +130,21 @@ main h1 {
 }
 
 main h2 {
-    margin: 26px 0 12px;
+    margin: 28px 0 14px;
     font-size: clamp(18px, 3vw, 22px);
     color: var(--text);
 }
 
 main p {
-    margin: 0 0 16px;
+    margin: 0 0 18px;
     color: var(--text);
 }
 
 main ul {
     padding-left: 20px;
-    margin: 0 0 16px;
+    margin: 0 0 18px;
     display: grid;
-    gap: 10px;
+    gap: 12px;
 }
 
 main li {
@@ -215,6 +216,8 @@ footer {
     }
 
     nav ul {
+        flex-wrap: wrap;
+        white-space: normal;
         gap: 6px;
     }
 
