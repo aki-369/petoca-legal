@@ -1,4 +1,4 @@
-/* Shared styling for Petoca legal pages */
+﻿/* Shared styling for Petoca legal pages */
 :root {
     --bg: #f5f6f7;
     --card: #ffffff;
@@ -7,6 +7,7 @@
     --accent: #2d6a4f;
     --border: #e2e6ea;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --radius: 16px;
     color-scheme: light;
 }
 
@@ -19,6 +20,7 @@
         --accent: #7cd1a9;
         --border: #28323b;
         --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        --radius: 16px;
         color-scheme: dark;
     }
 }
@@ -72,19 +74,22 @@ header {
 nav {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 14px;
+    border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 10px 14px;
     margin-bottom: 18px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    flex-wrap: nowrap;
+    gap: 8px;
     margin: 0;
-    padding: 0;
+    padding: 0 2px 2px;
+    white-space: nowrap;
 }
 
 nav a {
@@ -112,9 +117,9 @@ nav a.active {
 main {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: 18px;
+    border-radius: calc(var(--radius) + 2px);
     box-shadow: var(--shadow);
-    padding: 28px 24px 32px;
+    padding: 30px 24px 34px;
 }
 
 main h1 {
@@ -124,21 +129,21 @@ main h1 {
 }
 
 main h2 {
-    margin: 24px 0 10px;
+    margin: 26px 0 12px;
     font-size: clamp(18px, 3vw, 22px);
     color: var(--text);
 }
 
 main p {
-    margin: 0 0 14px;
+    margin: 0 0 16px;
     color: var(--text);
 }
 
 main ul {
     padding-left: 20px;
-    margin: 0 0 14px;
+    margin: 0 0 16px;
     display: grid;
-    gap: 8px;
+    gap: 10px;
 }
 
 main li {
@@ -159,7 +164,7 @@ main li {
 
 .info-card {
     border: 1px solid var(--border);
-    border-radius: 14px;
+    border-radius: var(--radius);
     padding: 16px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.98));
     box-shadow: var(--shadow);
@@ -210,7 +215,7 @@ footer {
     }
 
     nav ul {
-        gap: 8px;
+        gap: 6px;
     }
 
     nav a {
@@ -218,6 +223,6 @@ footer {
     }
 
     main {
-        padding: 22px 18px 26px;
+        padding: 24px 18px 26px;
     }
 }
