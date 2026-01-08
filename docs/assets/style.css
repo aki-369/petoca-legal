@@ -61,6 +61,15 @@ header {
     letter-spacing: 0.2px;
 }
 
+.brand img {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+}
+
 .brand .title {
     color: var(--text);
     font-size: 24px;
