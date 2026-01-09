@@ -125,6 +125,17 @@ nav a.active {
     box-shadow: inset 0 0 0 1px rgba(45, 106, 79, 0.25);
 }
 
+nav a:focus-visible,
+.info-card:focus-visible {
+    outline: 2px solid rgba(45, 106, 79, 0.45);
+    outline-offset: 2px;
+}
+
+.info-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+}
+
 main {
     background: var(--card);
     border: 1px solid var(--border);
