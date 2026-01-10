@@ -23,6 +23,11 @@
         --radius: 16px;
         color-scheme: dark;
     }
+
+    .info-card {
+        background: var(--card);
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+    }
 }
 
 * {
