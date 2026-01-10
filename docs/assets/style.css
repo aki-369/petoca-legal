@@ -255,3 +255,19 @@ footer {
         padding: 24px 18px 26px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .info-card {
+        background: var(--card);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+        color: var(--text);
+    }
+
+    .info-card h3 {
+        color: var(--text);
+    }
+
+    .info-card p {
+        color: var(--muted);
+    }
+}
